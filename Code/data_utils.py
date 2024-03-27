@@ -326,15 +326,15 @@ def remove_special_token_indexes(predictions, labels, label_list):
 
     return true_predictions, true_labels
 
-def plot_results(path = None):
+def plot_results(baseline_results_path, advanced_results_path,save_path = None):
     '''
     plot the results of the two models
 
     parms:
     path: saves the plot to the path
     '''
-    baseline_results_path = '..\Results\distilbert-base-uncased-baseline-argument-classificationresults-final.json'
-    advanced_results_path = '..\Results\distilbert-base-uncased-advanced-argument-classificationresults-final.json'
+    baseline_results_path = baseline_results_path
+    advanced_results_path = advanced_results_path
 
     with open(baseline_results_path, 'r') as file:
         baseline_results = json.load(file)
@@ -361,7 +361,7 @@ def plot_results(path = None):
     plt.xticks(rotation=45)
 
     # Save plot
-    if path: 
-        plt.savefig(path + 'f1_differences.png')
+    if save_path: 
+        plt.savefig(save_path + 'f1_differences.png')
 
     plt.show()
