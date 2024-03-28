@@ -1,0 +1,3 @@
+,capabilities,failure_rate,total_targets,fail_count,test_types
+0,verb_ellipsis,1.0,5,5,INV
+1,noun_ellipsis,0.5555555555555556,9,5,INV

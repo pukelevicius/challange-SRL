@@ -1,0 +1,4 @@
+,capabilities,failure_rate,total_targets,fail_count,test_types
+0,passive_voice,0.6111111111111112,36,22,MFT
+1,polysemy,0.717948717948718,39,28,MFT
+2,robustness,0.4,15,6,MFT
